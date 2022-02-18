@@ -10,7 +10,7 @@ import "./ProxyPaymentAddress.sol";
 
 /** 
   @notice
-  Manages deploying proxy payment addresses for Juicebox projects.
+  Manages deploying proxy payment addresses for Candybox projects.
 */
 contract ProxyPaymentAddressManager is IProxyPaymentAddressManager {
     // --- private stored properties --- //

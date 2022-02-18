@@ -1,7 +1,7 @@
 import directPaymentAddress from './direct_payment_address';
 import fundingCycles from './funding_cycles';
 import governance from './governance';
-import juiceboxProject from './juice_project';
+import candyboxProject from './candy_project';
 import modStore from './mod_store';
 import operatorStore from './operator_store';
 import prices from './prices';
@@ -26,7 +26,7 @@ export default function () {
   describe('Projects', projects);
   describe('TerminalDirectory', terminalDirectory);
   describe('Governance', governance);
-  describe('JuiceboxProject', juiceboxProject);
+  describe('CandyboxProject', candyboxProject);
   // Depends on TerminalDirectory.
   describe('FundingCycles', fundingCycles);
   // Depends on TerminalDirectory.

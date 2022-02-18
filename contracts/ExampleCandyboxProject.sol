@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.6;
 
-import "./abstract/JuiceboxProject.sol";
+import "./abstract/CandyboxProject.sol";
 
 /// @dev For testing purposes.
-contract ExampleJuiceboxProject is JuiceboxProject {
+contract ExampleCandyboxProject is CandyboxProject {
     constructor(uint256 _projectId, ITerminalDirectory _terminalDirectory)
-        JuiceboxProject(_projectId, _terminalDirectory)
+        CandyboxProject(_projectId, _terminalDirectory)
     {}
 
     function takeFee(

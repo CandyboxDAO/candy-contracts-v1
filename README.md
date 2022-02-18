@@ -1,4 +1,4 @@
-# juice-contracts-v1
+# candy-contracts-v1
 
 ## Develop
 

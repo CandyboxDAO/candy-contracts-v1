@@ -156,7 +156,7 @@ export default function () {
       fn: 'deploy',
       args: [
         this.deployer.address,
-        utils.formatBytes32String('juicebox'),
+        utils.formatBytes32String('candybox'),
         '',
         {
           target: 0,

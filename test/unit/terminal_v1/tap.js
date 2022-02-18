@@ -378,7 +378,7 @@ const ops =
                     mockContract: governance,
                     fn: 'pay',
                     // For some reason, the bytes to string doesnt match.
-                    // args: [owner, "Juicebox fee", false],
+                    // args: [owner, "Candybox fee", false],
                     returns: [],
                   }),
                 ]
@@ -514,7 +514,7 @@ const ops =
         mockContract: governance,
         fn: 'pay',
         // For some reason, the bytes to string doesnt match.
-        // args: [owner, "Juicebox fee", false],
+        // args: [owner, "Candybox fee", false],
         returns: [],
       }),
       executeFn({

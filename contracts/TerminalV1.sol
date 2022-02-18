@@ -8,7 +8,7 @@ import '@paulrberg/contracts/math/PRBMath.sol';
 import '@paulrberg/contracts/math/PRBMathUD60x18.sol';
 
 import './interfaces/ITerminalV1.sol';
-import './abstract/JuiceboxProject.sol';
+import './abstract/CandyboxProject.sol';
 import './abstract/Operatable.sol';
 
 import './libraries/Operations.sol';
@@ -29,7 +29,7 @@ import './libraries/Operations.sol';
   ───────────────────────────────────────────────────────────────────────────────────────────
 
   @notice 
-  This contract manages the Juicebox ecosystem, serves as a payment terminal, and custodies all funds.
+  This contract manages the Candybox ecosystem, serves as a payment terminal, and custodies all funds.
 
   @dev 
   A project can transfer its funds, along with the power to reconfigure and mint/burn their Tickets, from this contract to another allowed terminal contract at any time.
@@ -75,7 +75,7 @@ contract TerminalV1 is Operatable, ITerminalV1, ITerminal, ReentrancyGuard {
   /// @notice The amount of ETH that each project is responsible for.
   mapping(uint256 => uint256) public override balanceOf;
 
-  /// @notice The percent fee the Juicebox project takes from tapped amounts. Out of 200.
+  /// @notice The percent fee the Candybox project takes from tapped amounts. Out of 200.
   uint256 public override fee = 10;
 
   /// @notice The governance of the contract who makes fees and can allow new TerminalV1 contracts to be migrated to by project owners.
@@ -235,7 +235,7 @@ contract TerminalV1 is Operatable, ITerminalV1, ITerminal, ReentrancyGuard {
       @param _operatorStore A contract storing operator assignments.
       @param _modStore A storage for a project's mods.
       @param _prices A price feed contract to use.
-      @param _terminalDirectory A directory of a project's current Juicebox terminal to receive payments in.
+      @param _terminalDirectory A directory of a project's current Candybox terminal to receive payments in.
     */
   constructor(
     IProjects _projects,
@@ -912,7 +912,7 @@ contract TerminalV1 is Operatable, ITerminalV1, ITerminal, ReentrancyGuard {
         } else if (_mod.projectId != 0) {
           // Otherwise, if a project is specified, make a payment to it.
 
-          // Get a reference to the Juicebox terminal being used.
+          // Get a reference to the Candybox terminal being used.
           ITerminal _terminal = terminalDirectory.terminalOf(_mod.projectId);
 
           // The project must have a terminal to send funds to.
@@ -1205,12 +1205,12 @@ contract TerminalV1 is Operatable, ITerminalV1, ITerminal, ReentrancyGuard {
     if (feeAmount == 0) return 0;
 
     // When processing the admin fee, save gas if the admin is using this contract as its terminal.
-    if (terminalDirectory.terminalOf(JuiceboxProject(governance).projectId()) == this) {
+    if (terminalDirectory.terminalOf(CandyboxProject(governance).projectId()) == this) {
       // Use the local pay call.
-      _pay(JuiceboxProject(governance).projectId(), feeAmount, _beneficiary, _memo, false);
+      _pay(CandyboxProject(governance).projectId(), feeAmount, _beneficiary, _memo, false);
     } else {
       // Use the external pay call of the governance contract.
-      JuiceboxProject(governance).pay{value: feeAmount}(_beneficiary, _memo, false);
+      CandyboxProject(governance).pay{value: feeAmount}(_beneficiary, _memo, false);
     }
   }
 }

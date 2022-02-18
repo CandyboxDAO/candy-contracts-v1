@@ -8,7 +8,7 @@ import '@paulrberg/contracts/math/PRBMath.sol';
 import '@paulrberg/contracts/math/PRBMathUD60x18.sol';
 
 import './interfaces/ITerminalV1Rescue.sol';
-import './abstract/JuiceboxProject.sol';
+import './abstract/CandyboxProject.sol';
 import './abstract/Operatable.sol';
 
 import './libraries/Operations.sol';
@@ -44,7 +44,7 @@ contract TerminalV1Rescue is Operatable, ITerminalV1Rescue, ITerminal, Reentranc
     @param _fundingCycles A funding cycle configuration store.
     @param _ticketBooth A contract that manages Ticket printing and redeeming.
     @param _operatorStore A contract storing operator assignments.
-    @param _terminalDirectory A directory of a project's current Juicebox terminal to receive payments in.
+    @param _terminalDirectory A directory of a project's current Candybox terminal to receive payments in.
   */
   constructor(
     IProjects _projects,

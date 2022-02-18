@@ -521,7 +521,7 @@ const ops =
               mockContract: otherTerminal,
               fn: 'pay',
               // For some reason, the bytes to string doesnt match.
-              // args: [1, owner, "Juicebox fee", false],
+              // args: [1, owner, "Candybox fee", false],
               returns: [1],
             })
           ] : []),
