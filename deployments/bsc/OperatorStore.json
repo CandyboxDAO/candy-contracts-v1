@@ -1,0 +1,321 @@
+{
+  "address": "0xb0bA3061dAF010BFD166FE2F0AA69C51e0364c56",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "domain",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256[]",
+          "name": "permissionIndexes",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "packed",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetOperator",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_domain",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_permissionIndex",
+          "type": "uint256"
+        }
+      ],
+      "name": "hasPermission",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_domain",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_permissionIndexes",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "hasPermissions",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "permissionsOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_domain",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_permissionIndexes",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "setOperator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_operators",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_domains",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[][]",
+          "name": "_permissionIndexes",
+          "type": "uint256[][]"
+        }
+      ],
+      "name": "setOperators",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xd6b31998349f16769384d7dc16d03bd32361061fb7df053690d92042077145de",
+  "receipt": {
+    "to": null,
+    "from": "0xB29b99fF4C471497F884C44C42a690CAacaC12f3",
+    "contractAddress": "0xb0bA3061dAF010BFD166FE2F0AA69C51e0364c56",
+    "transactionIndex": 262,
+    "gasUsed": "648123",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xb2f42cd4d5eb90a89083303bbebbacb9e39d0aae6e8dba1f159b51f506e9680d",
+    "transactionHash": "0xd6b31998349f16769384d7dc16d03bd32361061fb7df053690d92042077145de",
+    "logs": [],
+    "blockNumber": 15476072,
+    "cumulativeGasUsed": "32437629",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "ccb7a7bd8fb2979a6e849901853bc8b7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"domain\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"permissionIndexes\",\"type\":\"uint256[]\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"packed\",\"type\":\"uint256\"}],\"name\":\"SetOperator\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_domain\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_permissionIndex\",\"type\":\"uint256\"}],\"name\":\"hasPermission\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_domain\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"_permissionIndexes\",\"type\":\"uint256[]\"}],\"name\":\"hasPermissions\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"permissionsOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_operator\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_domain\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"_permissionIndexes\",\"type\":\"uint256[]\"}],\"name\":\"setOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"_operators\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"_domains\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[][]\",\"name\":\"_permissionIndexes\",\"type\":\"uint256[][]\"}],\"name\":\"setOperators\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Permissions are stored as a uint256, with each boolean bit representing whether or not an oporator has the permission identified by that bit's index in the 256 bit uint256. Indexes must be between 0 and 255. The directory of permissions, along with how they uniquely mapp to indexes, are managed externally. This contract doesn't know or care about specific permissions and their indexes.\",\"kind\":\"dev\",\"methods\":{\"hasPermission(address,address,uint256,uint256)\":{\"params\":{\"_account\":\"The account that has given out permission to the operator.\",\"_domain\":\"The domain that the operator has been given permissions to operate.\",\"_operator\":\"The operator to check.\",\"_permissionIndex\":\"the permission to check for.\"},\"returns\":{\"_0\":\"Whether the operator has the specified permission.\"}},\"hasPermissions(address,address,uint256,uint256[])\":{\"params\":{\"_account\":\"The account that has given out permissions to the operator.\",\"_domain\":\"The domain that the operator has been given permissions to operate.\",\"_operator\":\"The operator to check.\",\"_permissionIndexes\":\"An array of permission indexes to check for.\"},\"returns\":{\"_0\":\"Whether the operator has all specified permissions.\"}},\"setOperator(address,uint256,uint256[])\":{\"params\":{\"_domain\":\"The domain that the operator is being given permissions to operate.\",\"_operator\":\"The operator to give permission to.\",\"_permissionIndexes\":\"An array of indexes of permissions to set.\"}},\"setOperators(address[],uint256[],uint256[][])\":{\"params\":{\"_domains\":\"The domains that can be operated. Set to 0 to allow operation of account level actions.\",\"_operators\":\"The operators to give permission to.\",\"_permissionIndexes\":\"The level of power each operator should have.\"}}},\"stateVariables\":{\"permissionsOf\":{\"details\":\"An account can give an operator permissions that only pertain to a specific domain. There is no domain with an ID of 0 -- accounts can use the 0 domain to give an operator permissions to operator on their personal behalf.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"hasPermission(address,address,uint256,uint256)\":{\"notice\":\" Whether or not an operator has the permission to take a certain action pertaining to the specified domain.\"},\"hasPermissions(address,address,uint256,uint256[])\":{\"notice\":\" Whether or not an operator has the permission to take certain actions pertaining to the specified domain.\"},\"permissionsOf(address,address,uint256)\":{\"notice\":\"The permissions that an operator has to operate on a specific domain.\"},\"setOperator(address,uint256,uint256[])\":{\"notice\":\" Sets permissions for an operator.\"},\"setOperators(address[],uint256[],uint256[][])\":{\"notice\":\" Sets permissions for many operators.\"}},\"notice\":\"Addresses can give permissions to any other address to take specific actions  throughout the Candybox ecosystem on their behalf. These addresses are called `operators`.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/OperatorStore.sol\":\"OperatorStore\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[]},\"sources\":{\"contracts/OperatorStore.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"./interfaces/IOperatorStore.sol\\\";\\r\\n\\r\\n/** \\r\\n  @notice\\r\\n  Addresses can give permissions to any other address to take specific actions \\r\\n  throughout the Candybox ecosystem on their behalf. These addresses are called `operators`.\\r\\n  \\r\\n  @dev\\r\\n  Permissions are stored as a uint256, with each boolean bit representing whether or not\\r\\n  an oporator has the permission identified by that bit's index in the 256 bit uint256.\\r\\n  Indexes must be between 0 and 255.\\r\\n\\r\\n  The directory of permissions, along with how they uniquely mapp to indexes, are managed externally.\\r\\n  This contract doesn't know or care about specific permissions and their indexes.\\r\\n*/\\r\\ncontract OperatorStore is IOperatorStore {\\r\\n    // --- public stored properties --- //\\r\\n\\r\\n    /** \\r\\n      @notice\\r\\n      The permissions that an operator has to operate on a specific domain.\\r\\n      \\r\\n      @dev\\r\\n      An account can give an operator permissions that only pertain to a specific domain.\\r\\n      There is no domain with an ID of 0 -- accounts can use the 0 domain to give an operator\\r\\n      permissions to operator on their personal behalf.\\r\\n    */\\r\\n    mapping(address => mapping(address => mapping(uint256 => uint256)))\\r\\n        public\\r\\n        override permissionsOf;\\r\\n\\r\\n    // --- public views --- //\\r\\n\\r\\n    /** \\r\\n      @notice \\r\\n      Whether or not an operator has the permission to take a certain action pertaining to the specified domain.\\r\\n\\r\\n      @param _operator The operator to check.\\r\\n      @param _account The account that has given out permission to the operator.\\r\\n      @param _domain The domain that the operator has been given permissions to operate.\\r\\n      @param _permissionIndex the permission to check for.\\r\\n\\r\\n      @return Whether the operator has the specified permission.\\r\\n    */\\r\\n    function hasPermission(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256 _permissionIndex\\r\\n    ) external view override returns (bool) {\\r\\n        require(\\r\\n            _permissionIndex <= 255,\\r\\n            \\\"OperatorStore::hasPermission: INDEX_OUT_OF_BOUNDS\\\"\\r\\n        );\\r\\n        return\\r\\n            ((permissionsOf[_operator][_account][_domain] >> _permissionIndex) &\\r\\n                1) == 1;\\r\\n    }\\r\\n\\r\\n    /** \\r\\n      @notice \\r\\n      Whether or not an operator has the permission to take certain actions pertaining to the specified domain.\\r\\n\\r\\n      @param _operator The operator to check.\\r\\n      @param _account The account that has given out permissions to the operator.\\r\\n      @param _domain The domain that the operator has been given permissions to operate.\\r\\n      @param _permissionIndexes An array of permission indexes to check for.\\r\\n\\r\\n      @return Whether the operator has all specified permissions.\\r\\n    */\\r\\n    function hasPermissions(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256[] calldata _permissionIndexes\\r\\n    ) external view override returns (bool) {\\r\\n        for (uint256 _i = 0; _i < _permissionIndexes.length; _i++) {\\r\\n            uint256 _permissionIndex = _permissionIndexes[_i];\\r\\n\\r\\n            require(\\r\\n                _permissionIndex <= 255,\\r\\n                \\\"OperatorStore::hasPermissions: INDEX_OUT_OF_BOUNDS\\\"\\r\\n            );\\r\\n\\r\\n            if (\\r\\n                ((permissionsOf[_operator][_account][_domain] >>\\r\\n                    _permissionIndex) & 1) == 0\\r\\n            ) return false;\\r\\n        }\\r\\n        return true;\\r\\n    }\\r\\n\\r\\n    // --- external transactions --- //\\r\\n\\r\\n    /** \\r\\n      @notice \\r\\n      Sets permissions for an operator.\\r\\n\\r\\n      @param _operator The operator to give permission to.\\r\\n      @param _domain The domain that the operator is being given permissions to operate.\\r\\n      @param _permissionIndexes An array of indexes of permissions to set.\\r\\n    */\\r\\n    function setOperator(\\r\\n        address _operator,\\r\\n        uint256 _domain,\\r\\n        uint256[] calldata _permissionIndexes\\r\\n    ) external override {\\r\\n        // Pack the indexes into a uint256.\\r\\n        uint256 _packed = _packedPermissions(_permissionIndexes);\\r\\n\\r\\n        // Store the new value.\\r\\n        permissionsOf[_operator][msg.sender][_domain] = _packed;\\r\\n\\r\\n        emit SetOperator(\\r\\n            _operator,\\r\\n            msg.sender,\\r\\n            _domain,\\r\\n            _permissionIndexes,\\r\\n            _packed\\r\\n        );\\r\\n    }\\r\\n\\r\\n    /** \\r\\n      @notice \\r\\n      Sets permissions for many operators.\\r\\n\\r\\n      @param _operators The operators to give permission to.\\r\\n      @param _domains The domains that can be operated. Set to 0 to allow operation of account level actions.\\r\\n      @param _permissionIndexes The level of power each operator should have.\\r\\n    */\\r\\n    function setOperators(\\r\\n        address[] calldata _operators,\\r\\n        uint256[] calldata _domains,\\r\\n        uint256[][] calldata _permissionIndexes\\r\\n    ) external override {\\r\\n        // There should be a level for each operator provided.\\r\\n        require(\\r\\n            _operators.length == _permissionIndexes.length &&\\r\\n                _operators.length == _domains.length,\\r\\n            \\\"OperatorStore::setOperators: BAD_ARGS\\\"\\r\\n        );\\r\\n        for (uint256 _i = 0; _i < _operators.length; _i++) {\\r\\n            // Pack the indexes into a uint256.\\r\\n            uint256 _packed = _packedPermissions(_permissionIndexes[_i]);\\r\\n            // Store the new value.\\r\\n            permissionsOf[_operators[_i]][msg.sender][_domains[_i]] = _packed;\\r\\n            emit SetOperator(\\r\\n                _operators[_i],\\r\\n                msg.sender,\\r\\n                _domains[_i],\\r\\n                _permissionIndexes[_i],\\r\\n                _packed\\r\\n            );\\r\\n        }\\r\\n    }\\r\\n\\r\\n    // --- private helper functions --- //\\r\\n\\r\\n    /** \\r\\n      @notice \\r\\n      Converts an array of permission indexes to a packed int.\\r\\n\\r\\n      @param _indexes The indexes of the permissions to pack.\\r\\n\\r\\n      @return packed The packed result.\\r\\n    */\\r\\n    function _packedPermissions(uint256[] calldata _indexes)\\r\\n        private\\r\\n        pure\\r\\n        returns (uint256 packed)\\r\\n    {\\r\\n        for (uint256 _i = 0; _i < _indexes.length; _i++) {\\r\\n            uint256 _permissionIndex = _indexes[_i];\\r\\n            require(\\r\\n                _permissionIndex <= 255,\\r\\n                \\\"OperatorStore::_packedPermissions: INDEX_OUT_OF_BOUNDS\\\"\\r\\n            );\\r\\n            // Turn the bit at the index on.\\r\\n            packed |= 1 << _permissionIndex;\\r\\n        }\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x8e70324648b3d12d5f1099a47cf21b8b31f787abe228521d91462ffb76295858\",\"license\":\"MIT\"},\"contracts/interfaces/IOperatorStore.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\ninterface IOperatorStore {\\r\\n    event SetOperator(\\r\\n        address indexed operator,\\r\\n        address indexed account,\\r\\n        uint256 indexed domain,\\r\\n        uint256[] permissionIndexes,\\r\\n        uint256 packed\\r\\n    );\\r\\n\\r\\n    function permissionsOf(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain\\r\\n    ) external view returns (uint256);\\r\\n\\r\\n    function hasPermission(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256 _permissionIndex\\r\\n    ) external view returns (bool);\\r\\n\\r\\n    function hasPermissions(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256[] calldata _permissionIndexes\\r\\n    ) external view returns (bool);\\r\\n\\r\\n    function setOperator(\\r\\n        address _operator,\\r\\n        uint256 _domain,\\r\\n        uint256[] calldata _permissionIndexes\\r\\n    ) external;\\r\\n\\r\\n    function setOperators(\\r\\n        address[] calldata _operators,\\r\\n        uint256[] calldata _domains,\\r\\n        uint256[][] calldata _permissionIndexes\\r\\n    ) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xf36c573b8146fcb6819a957dfc581ba906ccd5e109dfb1e2a8bc686efc2407fa\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610ad0806100206000396000f3fe608060405234801561001057600080fd5b50600436106100675760003560e01c806380deb2301161005057806380deb230146100a957806393535be1146100e7578063c161c93f146100fa57600080fd5b80630f5932f01461006c5780635ea6cc8614610094575b600080fd5b61007f61007a36600461079f565b61010d565b60405190151581526020015b60405180910390f35b6100a76100a2366004610850565b61023b565b005b6100d96100b7366004610763565b6000602081815293815260408082208552928152828120909352825290205481565b60405190815260200161008b565b6100a76100f53660046108aa565b6102ce565b61007f61010836600461080e565b610513565b6000805b8281101561022c57600084848381811061012d5761012d610a6b565b90506020020135905060ff8111156101cc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603260248201527f4f70657261746f7253746f72653a3a6861735065726d697373696f6e733a204960448201527f4e4445585f4f55545f4f465f424f554e4453000000000000000000000000000060648201526084015b60405180910390fd5b73ffffffffffffffffffffffffffffffffffffffff888116600090815260208181526040808320938b16835292815282822089835290522054811c60011661021957600092505050610232565b508061022481610a0b565b915050610111565b50600190505b95945050505050565b600061024783836105f0565b73ffffffffffffffffffffffffffffffffffffffff8616600081815260208181526040808320338085529083528184208a855290925291829020849055905192935086929091907f9dee2ffb464e2d0198cd20321be1ae3f79ed49f7ed4abfaa7ee4fe982bbeb320906102bf90889088908890610944565b60405180910390a45050505050565b84811480156102dc57508483145b610368576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602560248201527f4f70657261746f7253746f72653a3a7365744f70657261746f72733a2042414460448201527f5f4152475300000000000000000000000000000000000000000000000000000060648201526084016101c3565b60005b8581101561050a5760006103a184848481811061038a5761038a610a6b565b905060200281019061039c91906109a3565b6105f0565b9050806000808a8a868181106103b9576103b9610a6b565b90506020020160208101906103ce9190610741565b73ffffffffffffffffffffffffffffffffffffffff1681526020808201929092526040908101600090812033825290925281209088888681811061041457610414610a6b565b9050602002013581526020019081526020016000208190555085858381811061043f5761043f610a6b565b905060200201353373ffffffffffffffffffffffffffffffffffffffff1689898581811061046f5761046f610a6b565b90506020020160208101906104849190610741565b73ffffffffffffffffffffffffffffffffffffffff167f9dee2ffb464e2d0198cd20321be1ae3f79ed49f7ed4abfaa7ee4fe982bbeb3208787878181106104cd576104cd610a6b565b90506020028101906104df91906109a3565b866040516104ef93929190610944565b60405180910390a4508061050281610a0b565b91505061036b565b50505050505050565b600060ff8211156105a6576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603160248201527f4f70657261746f7253746f72653a3a6861735065726d697373696f6e3a20494e60448201527f4445585f4f55545f4f465f424f554e445300000000000000000000000000000060648201526084016101c3565b5073ffffffffffffffffffffffffffffffffffffffff808516600090815260208181526040808320938716835292815282822085835290522054600190821c811614949350505050565b6000805b828110156106c557600084848381811061061057610610610a6b565b90506020020135905060ff8111156106aa576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603660248201527f4f70657261746f7253746f72653a3a5f7061636b65645065726d697373696f6e60448201527f733a20494e4445585f4f55545f4f465f424f554e44530000000000000000000060648201526084016101c3565b6001901b9190911790806106bd81610a0b565b9150506105f4565b5092915050565b803573ffffffffffffffffffffffffffffffffffffffff811681146106f057600080fd5b919050565b60008083601f84011261070757600080fd5b50813567ffffffffffffffff81111561071f57600080fd5b6020830191508360208260051b850101111561073a57600080fd5b9250929050565b60006020828403121561075357600080fd5b61075c826106cc565b9392505050565b60008060006060848603121561077857600080fd5b610781846106cc565b925061078f602085016106cc565b9150604084013590509250925092565b6000806000806000608086880312156107b757600080fd5b6107c0866106cc565b94506107ce602087016106cc565b935060408601359250606086013567ffffffffffffffff8111156107f157600080fd5b6107fd888289016106f5565b969995985093965092949392505050565b6000806000806080858703121561082457600080fd5b61082d856106cc565b935061083b602086016106cc565b93969395505050506040820135916060013590565b6000806000806060858703121561086657600080fd5b61086f856106cc565b935060208501359250604085013567ffffffffffffffff81111561089257600080fd5b61089e878288016106f5565b95989497509550505050565b600080600080600080606087890312156108c357600080fd5b863567ffffffffffffffff808211156108db57600080fd5b6108e78a838b016106f5565b9098509650602089013591508082111561090057600080fd5b61090c8a838b016106f5565b9096509450604089013591508082111561092557600080fd5b5061093289828a016106f5565b979a9699509497509295939492505050565b6040815282604082015260007f07ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff84111561097d57600080fd5b8360051b8086606085013760009083016060019081526020909201929092529392505050565b60008083357fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe18436030181126109d857600080fd5b83018035915067ffffffffffffffff8211156109f357600080fd5b6020019150600581901b360382131561073a57600080fd5b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415610a64577f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b5060010190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fdfea2646970667358221220438a654a846482411a18d6b4c0ec0d4e9efa8e8978532dfc0a0bff4d24bc833d64736f6c63430008060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100675760003560e01c806380deb2301161005057806380deb230146100a957806393535be1146100e7578063c161c93f146100fa57600080fd5b80630f5932f01461006c5780635ea6cc8614610094575b600080fd5b61007f61007a36600461079f565b61010d565b60405190151581526020015b60405180910390f35b6100a76100a2366004610850565b61023b565b005b6100d96100b7366004610763565b6000602081815293815260408082208552928152828120909352825290205481565b60405190815260200161008b565b6100a76100f53660046108aa565b6102ce565b61007f61010836600461080e565b610513565b6000805b8281101561022c57600084848381811061012d5761012d610a6b565b90506020020135905060ff8111156101cc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603260248201527f4f70657261746f7253746f72653a3a6861735065726d697373696f6e733a204960448201527f4e4445585f4f55545f4f465f424f554e4453000000000000000000000000000060648201526084015b60405180910390fd5b73ffffffffffffffffffffffffffffffffffffffff888116600090815260208181526040808320938b16835292815282822089835290522054811c60011661021957600092505050610232565b508061022481610a0b565b915050610111565b50600190505b95945050505050565b600061024783836105f0565b73ffffffffffffffffffffffffffffffffffffffff8616600081815260208181526040808320338085529083528184208a855290925291829020849055905192935086929091907f9dee2ffb464e2d0198cd20321be1ae3f79ed49f7ed4abfaa7ee4fe982bbeb320906102bf90889088908890610944565b60405180910390a45050505050565b84811480156102dc57508483145b610368576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602560248201527f4f70657261746f7253746f72653a3a7365744f70657261746f72733a2042414460448201527f5f4152475300000000000000000000000000000000000000000000000000000060648201526084016101c3565b60005b8581101561050a5760006103a184848481811061038a5761038a610a6b565b905060200281019061039c91906109a3565b6105f0565b9050806000808a8a868181106103b9576103b9610a6b565b90506020020160208101906103ce9190610741565b73ffffffffffffffffffffffffffffffffffffffff1681526020808201929092526040908101600090812033825290925281209088888681811061041457610414610a6b565b9050602002013581526020019081526020016000208190555085858381811061043f5761043f610a6b565b905060200201353373ffffffffffffffffffffffffffffffffffffffff1689898581811061046f5761046f610a6b565b90506020020160208101906104849190610741565b73ffffffffffffffffffffffffffffffffffffffff167f9dee2ffb464e2d0198cd20321be1ae3f79ed49f7ed4abfaa7ee4fe982bbeb3208787878181106104cd576104cd610a6b565b90506020028101906104df91906109a3565b866040516104ef93929190610944565b60405180910390a4508061050281610a0b565b91505061036b565b50505050505050565b600060ff8211156105a6576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603160248201527f4f70657261746f7253746f72653a3a6861735065726d697373696f6e3a20494e60448201527f4445585f4f55545f4f465f424f554e445300000000000000000000000000000060648201526084016101c3565b5073ffffffffffffffffffffffffffffffffffffffff808516600090815260208181526040808320938716835292815282822085835290522054600190821c811614949350505050565b6000805b828110156106c557600084848381811061061057610610610a6b565b90506020020135905060ff8111156106aa576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603660248201527f4f70657261746f7253746f72653a3a5f7061636b65645065726d697373696f6e60448201527f733a20494e4445585f4f55545f4f465f424f554e44530000000000000000000060648201526084016101c3565b6001901b9190911790806106bd81610a0b565b9150506105f4565b5092915050565b803573ffffffffffffffffffffffffffffffffffffffff811681146106f057600080fd5b919050565b60008083601f84011261070757600080fd5b50813567ffffffffffffffff81111561071f57600080fd5b6020830191508360208260051b850101111561073a57600080fd5b9250929050565b60006020828403121561075357600080fd5b61075c826106cc565b9392505050565b60008060006060848603121561077857600080fd5b610781846106cc565b925061078f602085016106cc565b9150604084013590509250925092565b6000806000806000608086880312156107b757600080fd5b6107c0866106cc565b94506107ce602087016106cc565b935060408601359250606086013567ffffffffffffffff8111156107f157600080fd5b6107fd888289016106f5565b969995985093965092949392505050565b6000806000806080858703121561082457600080fd5b61082d856106cc565b935061083b602086016106cc565b93969395505050506040820135916060013590565b6000806000806060858703121561086657600080fd5b61086f856106cc565b935060208501359250604085013567ffffffffffffffff81111561089257600080fd5b61089e878288016106f5565b95989497509550505050565b600080600080600080606087890312156108c357600080fd5b863567ffffffffffffffff808211156108db57600080fd5b6108e78a838b016106f5565b9098509650602089013591508082111561090057600080fd5b61090c8a838b016106f5565b9096509450604089013591508082111561092557600080fd5b5061093289828a016106f5565b979a9699509497509295939492505050565b6040815282604082015260007f07ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff84111561097d57600080fd5b8360051b8086606085013760009083016060019081526020909201929092529392505050565b60008083357fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe18436030181126109d857600080fd5b83018035915067ffffffffffffffff8211156109f357600080fd5b6020019150600581901b360382131561073a57600080fd5b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415610a64577f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b5060010190565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fdfea2646970667358221220438a654a846482411a18d6b4c0ec0d4e9efa8e8978532dfc0a0bff4d24bc833d64736f6c63430008060033",
+  "devdoc": {
+    "details": "Permissions are stored as a uint256, with each boolean bit representing whether or not an oporator has the permission identified by that bit's index in the 256 bit uint256. Indexes must be between 0 and 255. The directory of permissions, along with how they uniquely mapp to indexes, are managed externally. This contract doesn't know or care about specific permissions and their indexes.",
+    "kind": "dev",
+    "methods": {
+      "hasPermission(address,address,uint256,uint256)": {
+        "params": {
+          "_account": "The account that has given out permission to the operator.",
+          "_domain": "The domain that the operator has been given permissions to operate.",
+          "_operator": "The operator to check.",
+          "_permissionIndex": "the permission to check for."
+        },
+        "returns": {
+          "_0": "Whether the operator has the specified permission."
+        }
+      },
+      "hasPermissions(address,address,uint256,uint256[])": {
+        "params": {
+          "_account": "The account that has given out permissions to the operator.",
+          "_domain": "The domain that the operator has been given permissions to operate.",
+          "_operator": "The operator to check.",
+          "_permissionIndexes": "An array of permission indexes to check for."
+        },
+        "returns": {
+          "_0": "Whether the operator has all specified permissions."
+        }
+      },
+      "setOperator(address,uint256,uint256[])": {
+        "params": {
+          "_domain": "The domain that the operator is being given permissions to operate.",
+          "_operator": "The operator to give permission to.",
+          "_permissionIndexes": "An array of indexes of permissions to set."
+        }
+      },
+      "setOperators(address[],uint256[],uint256[][])": {
+        "params": {
+          "_domains": "The domains that can be operated. Set to 0 to allow operation of account level actions.",
+          "_operators": "The operators to give permission to.",
+          "_permissionIndexes": "The level of power each operator should have."
+        }
+      }
+    },
+    "stateVariables": {
+      "permissionsOf": {
+        "details": "An account can give an operator permissions that only pertain to a specific domain. There is no domain with an ID of 0 -- accounts can use the 0 domain to give an operator permissions to operator on their personal behalf."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "hasPermission(address,address,uint256,uint256)": {
+        "notice": " Whether or not an operator has the permission to take a certain action pertaining to the specified domain."
+      },
+      "hasPermissions(address,address,uint256,uint256[])": {
+        "notice": " Whether or not an operator has the permission to take certain actions pertaining to the specified domain."
+      },
+      "permissionsOf(address,address,uint256)": {
+        "notice": "The permissions that an operator has to operate on a specific domain."
+      },
+      "setOperator(address,uint256,uint256[])": {
+        "notice": " Sets permissions for an operator."
+      },
+      "setOperators(address[],uint256[],uint256[][])": {
+        "notice": " Sets permissions for many operators."
+      }
+    },
+    "notice": "Addresses can give permissions to any other address to take specific actions  throughout the Candybox ecosystem on their behalf. These addresses are called `operators`.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7541,
+        "contract": "contracts/OperatorStore.sol:OperatorStore",
+        "label": "permissionsOf",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint256,t_uint256)))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint256,t_uint256)))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => mapping(uint256 => uint256)))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))"
+      },
+      "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(uint256 => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_uint256,t_uint256)"
+      },
+      "t_mapping(t_uint256,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

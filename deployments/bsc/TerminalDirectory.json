@@ -1,0 +1,445 @@
+{
+  "address": "0xD4d698441EEC2A7f1408679811DfA85fC6B18546",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IProjects",
+          "name": "_projects",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IOperatorStore",
+          "name": "_operatorStore",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "memo",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "DeployAddress",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "preferUnstakedTickets",
+          "type": "bool"
+        }
+      ],
+      "name": "SetPayerPreferences",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract ITerminal",
+          "name": "terminal",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "SetTerminal",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_projectId",
+          "type": "uint256"
+        }
+      ],
+      "name": "addressesOf",
+      "outputs": [
+        {
+          "internalType": "contract IDirectPaymentAddress[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "beneficiaryOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_projectId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_memo",
+          "type": "string"
+        }
+      ],
+      "name": "deployAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "operatorStore",
+      "outputs": [
+        {
+          "internalType": "contract IOperatorStore",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "projects",
+      "outputs": [
+        {
+          "internalType": "contract IProjects",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_preferUnstakedTickets",
+          "type": "bool"
+        }
+      ],
+      "name": "setPayerPreferences",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_projectId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract ITerminal",
+          "name": "_terminal",
+          "type": "address"
+        }
+      ],
+      "name": "setTerminal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "terminalOf",
+      "outputs": [
+        {
+          "internalType": "contract ITerminal",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "unstakedTicketsPreferenceOf",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x4d2acb94d3bfc032f302c60db09e92c853b825143077b2496cf206c1518c3f6e",
+  "receipt": {
+    "to": null,
+    "from": "0xB29b99fF4C471497F884C44C42a690CAacaC12f3",
+    "contractAddress": "0xD4d698441EEC2A7f1408679811DfA85fC6B18546",
+    "transactionIndex": 75,
+    "gasUsed": "1444197",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x856b04ef393976e15202beaf6e016129a273f7921a97159521c7df14be620b3d",
+    "transactionHash": "0x4d2acb94d3bfc032f302c60db09e92c853b825143077b2496cf206c1518c3f6e",
+    "logs": [],
+    "blockNumber": 15476086,
+    "cumulativeGasUsed": "13365224",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xE3672BADde62F4D3F5fef89A72a008fd1FC9cC10",
+    "0xb0bA3061dAF010BFD166FE2F0AA69C51e0364c56"
+  ],
+  "solcInputHash": "ccb7a7bd8fb2979a6e849901853bc8b7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IProjects\",\"name\":\"_projects\",\"type\":\"address\"},{\"internalType\":\"contract IOperatorStore\",\"name\":\"_operatorStore\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"memo\",\"type\":\"string\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"DeployAddress\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"preferUnstakedTickets\",\"type\":\"bool\"}],\"name\":\"SetPayerPreferences\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"contract ITerminal\",\"name\":\"terminal\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"SetTerminal\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"}],\"name\":\"addressesOf\",\"outputs\":[{\"internalType\":\"contract IDirectPaymentAddress[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"beneficiaryOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_memo\",\"type\":\"string\"}],\"name\":\"deployAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"operatorStore\",\"outputs\":[{\"internalType\":\"contract IOperatorStore\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"projects\",\"outputs\":[{\"internalType\":\"contract IProjects\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_beneficiary\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_preferUnstakedTickets\",\"type\":\"bool\"}],\"name\":\"setPayerPreferences\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"},{\"internalType\":\"contract ITerminal\",\"name\":\"_terminal\",\"type\":\"address\"}],\"name\":\"setTerminal\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"terminalOf\",\"outputs\":[{\"internalType\":\"contract ITerminal\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"unstakedTicketsPreferenceOf\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"addressesOf(uint256)\":{\"params\":{\"_projectId\":\"The ID of the project to get direct payment addresses for.\"},\"returns\":{\"_0\":\"A list of direct payment addresses for the specified project ID.\"}},\"constructor\":{\"params\":{\"_operatorStore\":\"A contract storing operator assignments.\",\"_projects\":\"A Projects contract which mints ERC-721's that represent project ownership and transfers.\"}},\"deployAddress(uint256,string)\":{\"params\":{\"_memo\":\"The note to use for payments made through the new direct payment address.\",\"_projectId\":\"The ID of the project to deploy a direct payment address for.\"}},\"setPayerPreferences(address,bool)\":{\"params\":{\"_beneficiary\":\"The beneficiary to set.\",\"_preferUnstakedTickets\":\"The preference to set.\"}},\"setTerminal(uint256,address)\":{\"params\":{\"_projectId\":\"The ID of the project to set a new terminal for.\",\"_terminal\":\"The new terminal to set.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"addressesOf(uint256)\":{\"notice\":\" A list of all direct payment addresses for the specified project ID.\"},\"beneficiaryOf(address)\":{\"notice\":\"For each address, the address that will be used as the beneficiary of direct payments made.\"},\"deployAddress(uint256,string)\":{\"notice\":\" Allows anyone to deploy a new direct payment address for a project.\"},\"operatorStore()\":{\"notice\":\"A contract storing operator assignments.\"},\"projects()\":{\"notice\":\"The Projects contract which mints ERC-721's that represent project ownership and transfers.\"},\"setPayerPreferences(address,bool)\":{\"notice\":\" Allows any address to pre set the beneficiary of their payments to any direct payment address, and to pre set whether to prefer to unstake tickets into ERC20's when making a payment.\"},\"setTerminal(uint256,address)\":{\"notice\":\" Update the candybox terminal that payments to direct payment addresses will be forwarded for the specified project ID.\"},\"terminalOf(uint256)\":{\"notice\":\"For each project ID, the candybox terminal that the direct payment addresses are proxies for.\"},\"unstakedTicketsPreferenceOf(address)\":{\"notice\":\"For each address, the preference of whether ticket will be auto claimed as ERC20s when a payment is made.\"}},\"notice\":\"Allows project owners to deploy proxy contracts that can pay them when receiving funds directly.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TerminalDirectory.sol\":\"TerminalDirectory\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../utils/introspection/IERC165.sol\\\";\\n\\n/**\\n * @dev Required interface of an ERC721 compliant contract.\\n */\\ninterface IERC721 is IERC165 {\\n    /**\\n     * @dev Emitted when `tokenId` token is transferred from `from` to `to`.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);\\n\\n    /**\\n     * @dev Emitted when `owner` enables `approved` to manage the `tokenId` token.\\n     */\\n    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);\\n\\n    /**\\n     * @dev Emitted when `owner` enables or disables (`approved`) `operator` to manage all of its assets.\\n     */\\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\\n\\n    /**\\n     * @dev Returns the number of tokens in ``owner``'s account.\\n     */\\n    function balanceOf(address owner) external view returns (uint256 balance);\\n\\n    /**\\n     * @dev Returns the owner of the `tokenId` token.\\n     *\\n     * Requirements:\\n     *\\n     * - `tokenId` must exist.\\n     */\\n    function ownerOf(uint256 tokenId) external view returns (address owner);\\n\\n    /**\\n     * @dev Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients\\n     * are aware of the ERC721 protocol to prevent tokens from being forever locked.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` cannot be the zero address.\\n     * - `to` cannot be the zero address.\\n     * - `tokenId` token must exist and be owned by `from`.\\n     * - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}.\\n     * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function safeTransferFrom(\\n        address from,\\n        address to,\\n        uint256 tokenId\\n    ) external;\\n\\n    /**\\n     * @dev Transfers `tokenId` token from `from` to `to`.\\n     *\\n     * WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` cannot be the zero address.\\n     * - `to` cannot be the zero address.\\n     * - `tokenId` token must be owned by `from`.\\n     * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 tokenId\\n    ) external;\\n\\n    /**\\n     * @dev Gives permission to `to` to transfer `tokenId` token to another account.\\n     * The approval is cleared when the token is transferred.\\n     *\\n     * Only a single account can be approved at a time, so approving the zero address clears previous approvals.\\n     *\\n     * Requirements:\\n     *\\n     * - The caller must own the token or be an approved operator.\\n     * - `tokenId` must exist.\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address to, uint256 tokenId) external;\\n\\n    /**\\n     * @dev Returns the account approved for `tokenId` token.\\n     *\\n     * Requirements:\\n     *\\n     * - `tokenId` must exist.\\n     */\\n    function getApproved(uint256 tokenId) external view returns (address operator);\\n\\n    /**\\n     * @dev Approve or remove `operator` as an operator for the caller.\\n     * Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller.\\n     *\\n     * Requirements:\\n     *\\n     * - The `operator` cannot be the caller.\\n     *\\n     * Emits an {ApprovalForAll} event.\\n     */\\n    function setApprovalForAll(address operator, bool _approved) external;\\n\\n    /**\\n     * @dev Returns if the `operator` is allowed to manage all of the assets of `owner`.\\n     *\\n     * See {setApprovalForAll}\\n     */\\n    function isApprovedForAll(address owner, address operator) external view returns (bool);\\n\\n    /**\\n     * @dev Safely transfers `tokenId` token from `from` to `to`.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` cannot be the zero address.\\n     * - `to` cannot be the zero address.\\n     * - `tokenId` token must exist and be owned by `from`.\\n     * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.\\n     * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function safeTransferFrom(\\n        address from,\\n        address to,\\n        uint256 tokenId,\\n        bytes calldata data\\n    ) external;\\n}\\n\",\"keccak256\":\"0xf101e8720213560fab41104d53b3cc7ba0456ef3a98455aa7f022391783144a0\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC165 standard, as defined in the\\n * https://eips.ethereum.org/EIPS/eip-165[EIP].\\n *\\n * Implementers can declare support of contract interfaces, which can then be\\n * queried by others ({ERC165Checker}).\\n *\\n * For an implementation, see {ERC165}.\\n */\\ninterface IERC165 {\\n    /**\\n     * @dev Returns true if this contract implements the interface defined by\\n     * `interfaceId`. See the corresponding\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\\n     * to learn more about how these ids are created.\\n     *\\n     * This function call must use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\n}\\n\",\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\"},\"contracts/DirectPaymentAddress.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"./interfaces/IDirectPaymentAddress.sol\\\";\\r\\nimport \\\"./interfaces/ITerminalDirectory.sol\\\";\\r\\n\\r\\n/** \\r\\n  @notice\\r\\n  A contract that can receive funds directly and forward to a project's current terminal.\\r\\n*/\\r\\ncontract DirectPaymentAddress is IDirectPaymentAddress {\\r\\n    // --- public immutable stored properties --- //\\r\\n\\r\\n    /// @notice The directory to use when resolving which terminal to send the payment to.\\r\\n    ITerminalDirectory public immutable override terminalDirectory;\\r\\n\\r\\n    /// @notice The ID of the project to pay when this contract receives funds.\\r\\n    uint256 public immutable override projectId;\\r\\n\\r\\n    // --- public stored properties --- //\\r\\n\\r\\n    /// @notice The memo to use when this contract forwards a payment to a terminal.\\r\\n    string public override memo;\\r\\n\\r\\n    // --- external transactions --- //\\r\\n\\r\\n    /** \\r\\n      @param _terminalDirectory A directory of a project's current Candybox terminal to receive payments in.\\r\\n      @param _projectId The ID of the project to pay when this contract receives funds.\\r\\n      @param _memo The memo to use when this contract forwards a payment to a terminal.\\r\\n    */\\r\\n    constructor(\\r\\n        ITerminalDirectory _terminalDirectory,\\r\\n        uint256 _projectId,\\r\\n        string memory _memo\\r\\n    ) {\\r\\n        terminalDirectory = _terminalDirectory;\\r\\n        projectId = _projectId;\\r\\n        memo = _memo;\\r\\n    }\\r\\n\\r\\n    // Receive funds and make a payment to the project's current terminal.\\r\\n    receive() external payable {\\r\\n        // Check to see if the sender has configured a beneficiary.\\r\\n        address _storedBeneficiary = terminalDirectory.beneficiaryOf(\\r\\n            msg.sender\\r\\n        );\\r\\n        // If no beneficiary is configured, use the sender's address.\\r\\n        address _beneficiary = _storedBeneficiary != address(0)\\r\\n            ? _storedBeneficiary\\r\\n            : msg.sender;\\r\\n\\r\\n        bool _preferUnstakedTickets = terminalDirectory\\r\\n        .unstakedTicketsPreferenceOf(msg.sender);\\r\\n\\r\\n        terminalDirectory.terminalOf(projectId).pay{value: msg.value}(\\r\\n            projectId,\\r\\n            _beneficiary,\\r\\n            memo,\\r\\n            _preferUnstakedTickets\\r\\n        );\\r\\n\\r\\n        emit Forward(\\r\\n            msg.sender,\\r\\n            projectId,\\r\\n            _beneficiary,\\r\\n            msg.value,\\r\\n            memo,\\r\\n            _preferUnstakedTickets\\r\\n        );\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xd9dd5b5c2115254060322f38d01792fcea8fd53276613849500637f8ead388db\",\"license\":\"MIT\"},\"contracts/TerminalDirectory.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport './interfaces/ITerminal.sol';\\r\\nimport './interfaces/ITerminalDirectory.sol';\\r\\nimport './interfaces/IProjects.sol';\\r\\n\\r\\nimport './abstract/Operatable.sol';\\r\\n\\r\\nimport './libraries/Operations.sol';\\r\\n\\r\\nimport './DirectPaymentAddress.sol';\\r\\n\\r\\n/**\\r\\n  @notice\\r\\n  Allows project owners to deploy proxy contracts that can pay them when receiving funds directly.\\r\\n*/\\r\\ncontract TerminalDirectory is ITerminalDirectory, Operatable {\\r\\n  // --- private stored properties --- //\\r\\n\\r\\n  // A list of contracts for each project ID that can receive funds directly.\\r\\n  mapping(uint256 => IDirectPaymentAddress[]) private _addressesOf;\\r\\n\\r\\n  // --- public immutable stored properties --- //\\r\\n\\r\\n  /// @notice The Projects contract which mints ERC-721's that represent project ownership and transfers.\\r\\n  IProjects public immutable override projects;\\r\\n\\r\\n  // --- public stored properties --- //\\r\\n\\r\\n  /// @notice For each project ID, the candybox terminal that the direct payment addresses are proxies for.\\r\\n  mapping(uint256 => ITerminal) public override terminalOf;\\r\\n\\r\\n  /// @notice For each address, the address that will be used as the beneficiary of direct payments made.\\r\\n  mapping(address => address) public override beneficiaryOf;\\r\\n\\r\\n  /// @notice For each address, the preference of whether ticket will be auto claimed as ERC20s when a payment is made.\\r\\n  mapping(address => bool) public override unstakedTicketsPreferenceOf;\\r\\n\\r\\n  // --- external views --- //\\r\\n\\r\\n  /** \\r\\n      @notice \\r\\n      A list of all direct payment addresses for the specified project ID.\\r\\n\\r\\n      @param _projectId The ID of the project to get direct payment addresses for.\\r\\n\\r\\n      @return A list of direct payment addresses for the specified project ID.\\r\\n    */\\r\\n  function addressesOf(uint256 _projectId)\\r\\n    external\\r\\n    view\\r\\n    override\\r\\n    returns (IDirectPaymentAddress[] memory)\\r\\n  {\\r\\n    return _addressesOf[_projectId];\\r\\n  }\\r\\n\\r\\n  // --- external transactions --- //\\r\\n\\r\\n  /** \\r\\n      @param _projects A Projects contract which mints ERC-721's that represent project ownership and transfers.\\r\\n      @param _operatorStore A contract storing operator assignments.\\r\\n    */\\r\\n  constructor(IProjects _projects, IOperatorStore _operatorStore) Operatable(_operatorStore) {\\r\\n    projects = _projects;\\r\\n  }\\r\\n\\r\\n  /** \\r\\n      @notice \\r\\n      Allows anyone to deploy a new direct payment address for a project.\\r\\n\\r\\n      @param _projectId The ID of the project to deploy a direct payment address for.\\r\\n      @param _memo The note to use for payments made through the new direct payment address.\\r\\n    */\\r\\n  function deployAddress(uint256 _projectId, string calldata _memo) external override {\\r\\n    require(_projectId > 0, 'TerminalDirectory::deployAddress: ZERO_PROJECT');\\r\\n\\r\\n    // Deploy the contract and push it to the list.\\r\\n    _addressesOf[_projectId].push(new DirectPaymentAddress(this, _projectId, _memo));\\r\\n\\r\\n    emit DeployAddress(_projectId, _memo, msg.sender);\\r\\n  }\\r\\n\\r\\n  /** \\r\\n      @notice \\r\\n      Update the candybox terminal that payments to direct payment addresses will be forwarded for the specified project ID.\\r\\n\\r\\n      @param _projectId The ID of the project to set a new terminal for.\\r\\n      @param _terminal The new terminal to set.\\r\\n    */\\r\\n  function setTerminal(uint256 _projectId, ITerminal _terminal) external override {\\r\\n    // Get a reference to the current terminal being used.\\r\\n    ITerminal _currentTerminal = terminalOf[_projectId];\\r\\n\\r\\n    address _projectOwner = projects.ownerOf(_projectId);\\r\\n\\r\\n    // Either:\\r\\n    // - case 1: the current terminal hasn't been set yet and the msg sender is either the projects contract or the terminal being set.\\r\\n    // - case 2: the current terminal must not yet be set, or the current terminal is setting a new terminal.\\r\\n    // - case 3: the msg sender is the owner or operator and either the current terminal hasn't been set, or the current terminal allows migration to the terminal being set.\\r\\n    require(\\r\\n      // case 1.\\r\\n      (_currentTerminal == ITerminal(address(0)) &&\\r\\n        (msg.sender == address(projects) || msg.sender == address(_terminal))) ||\\r\\n        // case 2.\\r\\n        msg.sender == address(_currentTerminal) ||\\r\\n        // case 3.\\r\\n        ((msg.sender == _projectOwner ||\\r\\n          operatorStore.hasPermission(\\r\\n            msg.sender,\\r\\n            _projectOwner,\\r\\n            _projectId,\\r\\n            Operations.SetTerminal\\r\\n          )) &&\\r\\n          (_currentTerminal == ITerminal(address(0)) ||\\r\\n            _currentTerminal.migrationIsAllowed(_terminal))),\\r\\n      'TerminalDirectory::setTerminal: UNAUTHORIZED'\\r\\n    );\\r\\n\\r\\n    // The project must exist.\\r\\n    require(projects.exists(_projectId), 'TerminalDirectory::setTerminal: NOT_FOUND');\\r\\n\\r\\n    // Can't set the zero address.\\r\\n    require(_terminal != ITerminal(address(0)), 'TerminalDirectory::setTerminal: ZERO_ADDRESS');\\r\\n\\r\\n    // If the terminal is already set, nothing to do.\\r\\n    if (_currentTerminal == _terminal) return;\\r\\n\\r\\n    // Set the new terminal.\\r\\n    terminalOf[_projectId] = _terminal;\\r\\n\\r\\n    emit SetTerminal(_projectId, _terminal, msg.sender);\\r\\n  }\\r\\n\\r\\n  /** \\r\\n      @notice \\r\\n      Allows any address to pre set the beneficiary of their payments to any direct payment address,\\r\\n      and to pre set whether to prefer to unstake tickets into ERC20's when making a payment.\\r\\n\\r\\n      @param _beneficiary The beneficiary to set.\\r\\n      @param _preferUnstakedTickets The preference to set.\\r\\n    */\\r\\n  function setPayerPreferences(address _beneficiary, bool _preferUnstakedTickets)\\r\\n    external\\r\\n    override\\r\\n  {\\r\\n    beneficiaryOf[msg.sender] = _beneficiary;\\r\\n    unstakedTicketsPreferenceOf[msg.sender] = _preferUnstakedTickets;\\r\\n\\r\\n    emit SetPayerPreferences(msg.sender, _beneficiary, _preferUnstakedTickets);\\r\\n  }\\r\\n}\\r\\n\",\"keccak256\":\"0xfb12d1419cac7f8f3c3ac06a0c0a3585a37b2572651f842e46f4943bd2e28cd1\",\"license\":\"MIT\"},\"contracts/abstract/Operatable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"./../interfaces/IOperatable.sol\\\";\\r\\n\\r\\nabstract contract Operatable is IOperatable {\\r\\n    modifier requirePermission(\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256 _index\\r\\n    ) {\\r\\n        require(\\r\\n            msg.sender == _account ||\\r\\n                operatorStore.hasPermission(\\r\\n                    msg.sender,\\r\\n                    _account,\\r\\n                    _domain,\\r\\n                    _index\\r\\n                ),\\r\\n            \\\"Operatable: UNAUTHORIZED\\\"\\r\\n        );\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    modifier requirePermissionAllowingWildcardDomain(\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256 _index\\r\\n    ) {\\r\\n        require(\\r\\n            msg.sender == _account ||\\r\\n                operatorStore.hasPermission(\\r\\n                    msg.sender,\\r\\n                    _account,\\r\\n                    _domain,\\r\\n                    _index\\r\\n                ) ||\\r\\n                operatorStore.hasPermission(msg.sender, _account, 0, _index),\\r\\n            \\\"Operatable: UNAUTHORIZED\\\"\\r\\n        );\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    modifier requirePermissionAcceptingAlternateAddress(\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256 _index,\\r\\n        address _alternate\\r\\n    ) {\\r\\n        require(\\r\\n            msg.sender == _account ||\\r\\n                operatorStore.hasPermission(\\r\\n                    msg.sender,\\r\\n                    _account,\\r\\n                    _domain,\\r\\n                    _index\\r\\n                ) ||\\r\\n                msg.sender == _alternate,\\r\\n            \\\"Operatable: UNAUTHORIZED\\\"\\r\\n        );\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    /// @notice A contract storing operator assignments.\\r\\n    IOperatorStore public immutable override operatorStore;\\r\\n\\r\\n    /** \\r\\n      @param _operatorStore A contract storing operator assignments.\\r\\n    */\\r\\n    constructor(IOperatorStore _operatorStore) {\\r\\n        operatorStore = _operatorStore;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x06cddb0970308c736fb56ba5a01e38116bbce8313976ae73656a2fa3cb6bec38\",\"license\":\"MIT\"},\"contracts/interfaces/IDirectPaymentAddress.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"./ITerminalDirectory.sol\\\";\\r\\nimport \\\"./ITerminal.sol\\\";\\r\\n\\r\\ninterface IDirectPaymentAddress {\\r\\n    event Forward(\\r\\n        address indexed payer,\\r\\n        uint256 indexed projectId,\\r\\n        address beneficiary,\\r\\n        uint256 value,\\r\\n        string memo,\\r\\n        bool preferUnstakedTickets\\r\\n    );\\r\\n\\r\\n    function terminalDirectory() external returns (ITerminalDirectory);\\r\\n\\r\\n    function projectId() external returns (uint256);\\r\\n\\r\\n    function memo() external returns (string memory);\\r\\n}\\r\\n\",\"keccak256\":\"0xd06e33fc4ee499a075753fef5254d67e2c5b34a1f59383aff3d39542493076ce\",\"license\":\"MIT\"},\"contracts/interfaces/IOperatable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"./IOperatorStore.sol\\\";\\r\\n\\r\\ninterface IOperatable {\\r\\n    function operatorStore() external view returns (IOperatorStore);\\r\\n}\\r\\n\",\"keccak256\":\"0x138ba6b9d0ec81636b5d9ec2309c985970b0cb156eec99cc59bb8bfa1e329aee\",\"license\":\"MIT\"},\"contracts/interfaces/IOperatorStore.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\ninterface IOperatorStore {\\r\\n    event SetOperator(\\r\\n        address indexed operator,\\r\\n        address indexed account,\\r\\n        uint256 indexed domain,\\r\\n        uint256[] permissionIndexes,\\r\\n        uint256 packed\\r\\n    );\\r\\n\\r\\n    function permissionsOf(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain\\r\\n    ) external view returns (uint256);\\r\\n\\r\\n    function hasPermission(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256 _permissionIndex\\r\\n    ) external view returns (bool);\\r\\n\\r\\n    function hasPermissions(\\r\\n        address _operator,\\r\\n        address _account,\\r\\n        uint256 _domain,\\r\\n        uint256[] calldata _permissionIndexes\\r\\n    ) external view returns (bool);\\r\\n\\r\\n    function setOperator(\\r\\n        address _operator,\\r\\n        uint256 _domain,\\r\\n        uint256[] calldata _permissionIndexes\\r\\n    ) external;\\r\\n\\r\\n    function setOperators(\\r\\n        address[] calldata _operators,\\r\\n        uint256[] calldata _domains,\\r\\n        uint256[][] calldata _permissionIndexes\\r\\n    ) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xf36c573b8146fcb6819a957dfc581ba906ccd5e109dfb1e2a8bc686efc2407fa\",\"license\":\"MIT\"},\"contracts/interfaces/IProjects.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"@openzeppelin/contracts/token/ERC721/IERC721.sol\\\";\\r\\n\\r\\nimport \\\"./ITerminal.sol\\\";\\r\\nimport \\\"./IOperatorStore.sol\\\";\\r\\n\\r\\ninterface IProjects is IERC721 {\\r\\n    event Create(\\r\\n        uint256 indexed projectId,\\r\\n        address indexed owner,\\r\\n        bytes32 indexed handle,\\r\\n        string uri,\\r\\n        ITerminal terminal,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    event SetHandle(\\r\\n        uint256 indexed projectId,\\r\\n        bytes32 indexed handle,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    event SetUri(uint256 indexed projectId, string uri, address caller);\\r\\n\\r\\n    event TransferHandle(\\r\\n        uint256 indexed projectId,\\r\\n        address indexed to,\\r\\n        bytes32 indexed handle,\\r\\n        bytes32 newHandle,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    event ClaimHandle(\\r\\n        address indexed account,\\r\\n        uint256 indexed projectId,\\r\\n        bytes32 indexed handle,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    event ChallengeHandle(\\r\\n        bytes32 indexed handle,\\r\\n        uint256 challengeExpiry,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    event RenewHandle(\\r\\n        bytes32 indexed handle,\\r\\n        uint256 indexed projectId,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    function count() external view returns (uint256);\\r\\n\\r\\n    function uriOf(uint256 _projectId) external view returns (string memory);\\r\\n\\r\\n    function handleOf(uint256 _projectId) external returns (bytes32 handle);\\r\\n\\r\\n    function projectFor(bytes32 _handle) external returns (uint256 projectId);\\r\\n\\r\\n    function transferAddressFor(bytes32 _handle)\\r\\n        external\\r\\n        returns (address receiver);\\r\\n\\r\\n    function challengeExpiryOf(bytes32 _handle) external returns (uint256);\\r\\n\\r\\n    function exists(uint256 _projectId) external view returns (bool);\\r\\n\\r\\n    function create(\\r\\n        address _owner,\\r\\n        bytes32 _handle,\\r\\n        string calldata _uri,\\r\\n        ITerminal _terminal\\r\\n    ) external returns (uint256 id);\\r\\n\\r\\n    function setHandle(uint256 _projectId, bytes32 _handle) external;\\r\\n\\r\\n    function setUri(uint256 _projectId, string calldata _uri) external;\\r\\n\\r\\n    function transferHandle(\\r\\n        uint256 _projectId,\\r\\n        address _to,\\r\\n        bytes32 _newHandle\\r\\n    ) external returns (bytes32 _handle);\\r\\n\\r\\n    function claimHandle(\\r\\n        bytes32 _handle,\\r\\n        address _for,\\r\\n        uint256 _projectId\\r\\n    ) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x62f6370a1ee64fb5642159b7049715a59404815de69a26dcfe60e0b40e30ff01\",\"license\":\"MIT\"},\"contracts/interfaces/ITerminal.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport './ITerminalDirectory.sol';\\r\\n\\r\\ninterface ITerminal {\\r\\n  function terminalDirectory() external view returns (ITerminalDirectory);\\r\\n\\r\\n  function migrationIsAllowed(ITerminal _terminal) external view returns (bool);\\r\\n\\r\\n  function pay(\\r\\n    uint256 _projectId,\\r\\n    address _beneficiary,\\r\\n    string calldata _memo,\\r\\n    bool _preferUnstakedTickets\\r\\n  ) external payable returns (uint256 fundingCycleId);\\r\\n\\r\\n  function addToBalance(uint256 _projectId) external payable;\\r\\n\\r\\n  function allowMigration(ITerminal _contract) external;\\r\\n\\r\\n  function migrate(uint256 _projectId, ITerminal _to) external;\\r\\n}\\r\\n\",\"keccak256\":\"0x3936e4ecc9600ca75b996fbc19674f1c2997be5899e77ae9ef240b410a9cb647\",\"license\":\"MIT\"},\"contracts/interfaces/ITerminalDirectory.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nimport \\\"./IDirectPaymentAddress.sol\\\";\\r\\nimport \\\"./ITerminal.sol\\\";\\r\\nimport \\\"./IProjects.sol\\\";\\r\\nimport \\\"./IProjects.sol\\\";\\r\\n\\r\\ninterface ITerminalDirectory {\\r\\n    event DeployAddress(\\r\\n        uint256 indexed projectId,\\r\\n        string memo,\\r\\n        address indexed caller\\r\\n    );\\r\\n\\r\\n    event SetTerminal(\\r\\n        uint256 indexed projectId,\\r\\n        ITerminal indexed terminal,\\r\\n        address caller\\r\\n    );\\r\\n\\r\\n    event SetPayerPreferences(\\r\\n        address indexed account,\\r\\n        address beneficiary,\\r\\n        bool preferUnstakedTickets\\r\\n    );\\r\\n\\r\\n    function projects() external view returns (IProjects);\\r\\n\\r\\n    function terminalOf(uint256 _projectId) external view returns (ITerminal);\\r\\n\\r\\n    function beneficiaryOf(address _account) external returns (address);\\r\\n\\r\\n    function unstakedTicketsPreferenceOf(address _account)\\r\\n        external\\r\\n        returns (bool);\\r\\n\\r\\n    function addressesOf(uint256 _projectId)\\r\\n        external\\r\\n        view\\r\\n        returns (IDirectPaymentAddress[] memory);\\r\\n\\r\\n    function deployAddress(uint256 _projectId, string calldata _memo) external;\\r\\n\\r\\n    function setTerminal(uint256 _projectId, ITerminal _terminal) external;\\r\\n\\r\\n    function setPayerPreferences(\\r\\n        address _beneficiary,\\r\\n        bool _preferUnstakedTickets\\r\\n    ) external;\\r\\n}\\r\\n\",\"keccak256\":\"0xdf51c6dfb9b0236446e35701283ffb1c3508546ef9bf0e48933ea52f6b359c68\",\"license\":\"MIT\"},\"contracts/libraries/Operations.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity 0.8.6;\\r\\n\\r\\nlibrary Operations {\\r\\n  uint256 public constant Configure = 1;\\r\\n  uint256 public constant PrintPreminedTickets = 2;\\r\\n  uint256 public constant Redeem = 3;\\r\\n  uint256 public constant Migrate = 4;\\r\\n  uint256 public constant SetHandle = 5;\\r\\n  uint256 public constant SetUri = 6;\\r\\n  uint256 public constant ClaimHandle = 7;\\r\\n  uint256 public constant RenewHandle = 8;\\r\\n  uint256 public constant Issue = 9;\\r\\n  uint256 public constant Stake = 10;\\r\\n  uint256 public constant Unstake = 11;\\r\\n  uint256 public constant Transfer = 12;\\r\\n  uint256 public constant Lock = 13;\\r\\n  uint256 public constant SetPayoutMods = 14;\\r\\n  uint256 public constant SetTicketMods = 15;\\r\\n  uint256 public constant SetTerminal = 16;\\r\\n  uint256 public constant PrintTickets = 17;\\r\\n}\\r\\n\",\"keccak256\":\"0xea1843e157d2ba34cdeed4cf0eeac364966c3fe9fb5570f55137a57decef0199\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60c060405234801561001057600080fd5b50604051611a3b380380611a3b83398101604081905261002f9161004e565b6001600160601b0319606091821b811660805291901b1660a0526100a0565b6000806040838503121561006157600080fd5b825161006c81610088565b602084015190925061007d81610088565b809150509250929050565b6001600160a01b038116811461009d57600080fd5b50565b60805160601c60a05160601c6119546100e7600039600081816101490152818161049e01528181610556015261083e0152600081816101d8015261063901526119546000f3fe60806040523480156200001157600080fd5b5060043610620000b05760003560e01c80639dcbf9d6116200007f578063ad007d631162000062578063ad007d6314620001d2578063b9e5559514620001fa578063ba7bffd3146200021157600080fd5b80639dcbf9d614620001845780639fc9ea4714620001bb57600080fd5b80634cbcdc2314620000b55780634fe0eced14620000e45780638b79543c14620001435780639725b532146200016b575b600080fd5b620000cc620000c636600462000c40565b6200024a565b604051620000db919062000d4c565b60405180910390f35b6200011d620000f536600462000c40565b60016020526000908152604090205473ffffffffffffffffffffffffffffffffffffffff1681565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001620000db565b6200011d7f000000000000000000000000000000000000000000000000000000000000000081565b620001826200017c36600462000c82565b620002c3565b005b620001aa6200019536600462000b9b565b60036020526000908152604090205460ff1681565b6040519015158152602001620000db565b62000182620001cc36600462000c5a565b62000446565b6200011d7f000000000000000000000000000000000000000000000000000000000000000081565b620001826200020b36600462000be2565b62000aca565b6200011d6200022236600462000b9b565b60026020526000908152604090205473ffffffffffffffffffffffffffffffffffffffff1681565b60008181526020818152604091829020805483518184028101840190945280845260609392830182828015620002b757602002820191906000526020600020905b815473ffffffffffffffffffffffffffffffffffffffff1681526001909101906020018083116200028b575b50505050509050919050565b6000831162000359576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602e60248201527f5465726d696e616c4469726563746f72793a3a6465706c6f794164647265737360448201527f3a205a45524f5f50524f4a45435400000000000000000000000000000000000060648201526084015b60405180910390fd5b600080848152602001908152602001600020308484846040516200037d9062000b8d565b6200038c949392919062000da8565b604051809103906000f080158015620003a9573d6000803e3d6000fd5b5081546001810183556000928352602090922090910180547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff909216919091179055604051339084907f625d3e8b3b4cdc244ab1e77733463c3700b7dfa192308bc40ef5d3df6e1a6f7f9062000439908690869062000dea565b60405180910390a3505050565b6000828152600160205260408082205490517f6352211e0000000000000000000000000000000000000000000000000000000081526004810185905273ffffffffffffffffffffffffffffffffffffffff91821692917f00000000000000000000000000000000000000000000000000000000000000001690636352211e9060240160206040518083038186803b158015620004e157600080fd5b505afa158015620004f6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906200051c919062000bc2565b905073ffffffffffffffffffffffffffffffffffffffff82161580156200059857503373ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000000000000000000000000000000000000000000001614806200059857503373ffffffffffffffffffffffffffffffffffffffff8416145b80620005b957503373ffffffffffffffffffffffffffffffffffffffff8316145b806200078157503373ffffffffffffffffffffffffffffffffffffffff82161480620006b757506040517fc161c93f00000000000000000000000000000000000000000000000000000000815233600482015273ffffffffffffffffffffffffffffffffffffffff828116602483015260448201869052601060648301527f0000000000000000000000000000000000000000000000000000000000000000169063c161c93f9060840160206040518083038186803b1580156200067c57600080fd5b505afa15801562000691573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190620006b7919062000c20565b801562000781575073ffffffffffffffffffffffffffffffffffffffff821615806200078157506040517fb9f1109100000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff848116600483015283169063b9f110919060240160206040518083038186803b1580156200074657600080fd5b505afa1580156200075b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019062000781919062000c20565b6200080f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602c60248201527f5465726d696e616c4469726563746f72793a3a7365745465726d696e616c3a2060448201527f554e415554484f52495a45440000000000000000000000000000000000000000606482015260840162000350565b6040517f4f558e79000000000000000000000000000000000000000000000000000000008152600481018590527f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff1690634f558e799060240160206040518083038186803b1580156200089657600080fd5b505afa158015620008ab573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190620008d1919062000c20565b6200095f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602960248201527f5465726d696e616c4469726563746f72793a3a7365745465726d696e616c3a2060448201527f4e4f545f464f554e440000000000000000000000000000000000000000000000606482015260840162000350565b73ffffffffffffffffffffffffffffffffffffffff831662000a04576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602c60248201527f5465726d696e616c4469726563746f72793a3a7365745465726d696e616c3a2060448201527f5a45524f5f414444524553530000000000000000000000000000000000000000606482015260840162000350565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141562000a3f5750505050565b60008481526001602090815260409182902080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff8716908117909155915133815286917f6780b115550b4a9f66ac0fa6f3eed2769911165bc5d87ad966769dbbbfae1dbe910160405180910390a350505050565b33600081815260026020908152604080832080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff8816908117909155600383529281902080547fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00168615159081179091558151938452918301919091527f01405a9170fb91f1304461ab04a052c0f33349b97b4df28754a10c681041ff99910160405180910390a25050565b610ae18062000e3e83390190565b60006020828403121562000bae57600080fd5b813562000bbb8162000e08565b9392505050565b60006020828403121562000bd557600080fd5b815162000bbb8162000e08565b6000806040838503121562000bf657600080fd5b823562000c038162000e08565b9150602083013562000c158162000e2e565b809150509250929050565b60006020828403121562000c3357600080fd5b815162000bbb8162000e2e565b60006020828403121562000c5357600080fd5b5035919050565b6000806040838503121562000c6e57600080fd5b82359150602083013562000c158162000e08565b60008060006040848603121562000c9857600080fd5b83359250602084013567ffffffffffffffff8082111562000cb857600080fd5b818601915086601f83011262000ccd57600080fd5b81358181111562000cdd57600080fd5b87602082850101111562000cf057600080fd5b6020830194508093505050509250925092565b8183528181602085013750600060208284010152600060207fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0601f840116840101905092915050565b6020808252825182820181905260009190848201906040850190845b8181101562000d9c57835173ffffffffffffffffffffffffffffffffffffffff168352928401929184019160010162000d68565b50909695505050505050565b73ffffffffffffffffffffffffffffffffffffffff8516815283602082015260606040820152600062000de060608301848662000d03565b9695505050505050565b60208152600062000e0060208301848662000d03565b949350505050565b73ffffffffffffffffffffffffffffffffffffffff8116811462000e2b57600080fd5b50565b801515811462000e2b57600080fdfe60c06040523480156200001157600080fd5b5060405162000ae138038062000ae1833981016040819052620000349162000110565b6001600160601b0319606084901b1660805260a08290528051620000609060009060208401906200006a565b505050506200026c565b828054620000789062000219565b90600052602060002090601f0160209004810192826200009c5760008555620000e7565b82601f10620000b757805160ff1916838001178555620000e7565b82800160010185558215620000e7579182015b82811115620000e7578251825591602001919060010190620000ca565b50620000f5929150620000f9565b5090565b5b80821115620000f55760008155600101620000fa565b6000806000606084860312156200012657600080fd5b83516001600160a01b03811681146200013e57600080fd5b60208581015160408701519295509350906001600160401b03808211156200016557600080fd5b818701915087601f8301126200017a57600080fd5b8151818111156200018f576200018f62000256565b604051601f8201601f19908116603f01168101908382118183101715620001ba57620001ba62000256565b816040528281528a86848701011115620001d357600080fd5b600093505b82841015620001f75784840186015181850187015292850192620001d8565b82841115620002095760008684830101525b8096505050505050509250925092565b600181811c908216806200022e57607f821691505b602082108114156200025057634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fd5b60805160601c60a051610823620002be60003960008181610213015281816102e9015281816103800152610410015260008181606e0152818161016f0152818161023c015261047901526108236000f3fe6080604052600436106100385760003560e01c80633fafa127146103fe57806358c3b870146104455780636abcf8e31461046757600080fd5b366103f9576040517fba7bffd30000000000000000000000000000000000000000000000000000000081523360048201526000907f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff169063ba7bffd390602401602060405180830381600087803b1580156100c757600080fd5b505af11580156100db573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100ff919061054e565b9050600073ffffffffffffffffffffffffffffffffffffffff82166101245733610126565b815b6040517f9dcbf9d600000000000000000000000000000000000000000000000000000000815233600482015290915060009073ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000000000000000000000000000000000000000000001690639dcbf9d690602401602060405180830381600087803b1580156101b357600080fd5b505af11580156101c7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101eb9190610572565b6040517f4fe0eced0000000000000000000000000000000000000000000000000000000081527f000000000000000000000000000000000000000000000000000000000000000060048201529091507f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff1690634fe0eced9060240160206040518083038186803b15801561029357600080fd5b505afa1580156102a7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102cb919061054e565b73ffffffffffffffffffffffffffffffffffffffff166302c8986f347f0000000000000000000000000000000000000000000000000000000000000000856000866040518663ffffffff1660e01b815260040161032b949392919061073f565b6020604051808303818588803b15801561034457600080fd5b505af1158015610358573d6000803e3d6000fd5b50505050506040513d601f19601f8201168201806040525081019061037d9190610594565b507f00000000000000000000000000000000000000000000000000000000000000003373ffffffffffffffffffffffffffffffffffffffff167f73c0c8eb2e5343fd4f621dee6cc0dd1f91a240b7a6245465fa884753efd7cab384346000866040516103ec9493929190610684565b60405180910390a3505050005b600080fd5b34801561040a57600080fd5b506104327f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020015b60405180910390f35b34801561045157600080fd5b5061045a6104c0565b60405161043c91906106cc565b34801561047357600080fd5b5061049b7f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200161043c565b600080546104cd90610774565b80601f01602080910402602001604051908101604052809291908181526020018280546104f990610774565b80156105465780601f1061051b57610100808354040283529160200191610546565b820191906000526020600020905b81548152906001019060200180831161052957829003601f168201915b505050505081565b60006020828403121561056057600080fd5b815161056b816107c8565b9392505050565b60006020828403121561058457600080fd5b8151801515811461056b57600080fd5b6000602082840312156105a657600080fd5b5051919050565b8054600090600181811c90808316806105c757607f831692505b6020808410821415610602577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b8388526020880182801561061d576001811461064c57610677565b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00871682528282019750610677565b60008981526020902060005b8781101561067157815484820152908601908401610658565b83019850505b5050505050505092915050565b73ffffffffffffffffffffffffffffffffffffffff851681528360208201526080604082015260006106b960808301856105ad565b9050821515606083015295945050505050565b600060208083528351808285015260005b818110156106f9578581018301518582016040015282016106dd565b8181111561070b576000604083870101525b50601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe016929092016040019392505050565b84815273ffffffffffffffffffffffffffffffffffffffff841660208201526080604082015260006106b960808301856105ad565b600181811c9082168061078857607f821691505b602082108114156107c2577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b50919050565b73ffffffffffffffffffffffffffffffffffffffff811681146107ea57600080fd5b5056fea2646970667358221220f8f2411970eea8929322e4bda46a8478f5cf404377bd7654e44e8aec42e57e5564736f6c63430008060033a2646970667358221220f416458f5e2e2e67472977b905d65cfd64b8f91977d23ba3fcd0c876da64868264736f6c63430008060033",
+  "deployedBytecode": "0x60806040523480156200001157600080fd5b5060043610620000b05760003560e01c80639dcbf9d6116200007f578063ad007d631162000062578063ad007d6314620001d2578063b9e5559514620001fa578063ba7bffd3146200021157600080fd5b80639dcbf9d614620001845780639fc9ea4714620001bb57600080fd5b80634cbcdc2314620000b55780634fe0eced14620000e45780638b79543c14620001435780639725b532146200016b575b600080fd5b620000cc620000c636600462000c40565b6200024a565b604051620000db919062000d4c565b60405180910390f35b6200011d620000f536600462000c40565b60016020526000908152604090205473ffffffffffffffffffffffffffffffffffffffff1681565b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001620000db565b6200011d7f000000000000000000000000000000000000000000000000000000000000000081565b620001826200017c36600462000c82565b620002c3565b005b620001aa6200019536600462000b9b565b60036020526000908152604090205460ff1681565b6040519015158152602001620000db565b62000182620001cc36600462000c5a565b62000446565b6200011d7f000000000000000000000000000000000000000000000000000000000000000081565b620001826200020b36600462000be2565b62000aca565b6200011d6200022236600462000b9b565b60026020526000908152604090205473ffffffffffffffffffffffffffffffffffffffff1681565b60008181526020818152604091829020805483518184028101840190945280845260609392830182828015620002b757602002820191906000526020600020905b815473ffffffffffffffffffffffffffffffffffffffff1681526001909101906020018083116200028b575b50505050509050919050565b6000831162000359576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602e60248201527f5465726d696e616c4469726563746f72793a3a6465706c6f794164647265737360448201527f3a205a45524f5f50524f4a45435400000000000000000000000000000000000060648201526084015b60405180910390fd5b600080848152602001908152602001600020308484846040516200037d9062000b8d565b6200038c949392919062000da8565b604051809103906000f080158015620003a9573d6000803e3d6000fd5b5081546001810183556000928352602090922090910180547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff909216919091179055604051339084907f625d3e8b3b4cdc244ab1e77733463c3700b7dfa192308bc40ef5d3df6e1a6f7f9062000439908690869062000dea565b60405180910390a3505050565b6000828152600160205260408082205490517f6352211e0000000000000000000000000000000000000000000000000000000081526004810185905273ffffffffffffffffffffffffffffffffffffffff91821692917f00000000000000000000000000000000000000000000000000000000000000001690636352211e9060240160206040518083038186803b158015620004e157600080fd5b505afa158015620004f6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906200051c919062000bc2565b905073ffffffffffffffffffffffffffffffffffffffff82161580156200059857503373ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000000000000000000000000000000000000000000001614806200059857503373ffffffffffffffffffffffffffffffffffffffff8416145b80620005b957503373ffffffffffffffffffffffffffffffffffffffff8316145b806200078157503373ffffffffffffffffffffffffffffffffffffffff82161480620006b757506040517fc161c93f00000000000000000000000000000000000000000000000000000000815233600482015273ffffffffffffffffffffffffffffffffffffffff828116602483015260448201869052601060648301527f0000000000000000000000000000000000000000000000000000000000000000169063c161c93f9060840160206040518083038186803b1580156200067c57600080fd5b505afa15801562000691573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190620006b7919062000c20565b801562000781575073ffffffffffffffffffffffffffffffffffffffff821615806200078157506040517fb9f1109100000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff848116600483015283169063b9f110919060240160206040518083038186803b1580156200074657600080fd5b505afa1580156200075b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019062000781919062000c20565b6200080f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602c60248201527f5465726d696e616c4469726563746f72793a3a7365745465726d696e616c3a2060448201527f554e415554484f52495a45440000000000000000000000000000000000000000606482015260840162000350565b6040517f4f558e79000000000000000000000000000000000000000000000000000000008152600481018590527f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff1690634f558e799060240160206040518083038186803b1580156200089657600080fd5b505afa158015620008ab573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190620008d1919062000c20565b6200095f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602960248201527f5465726d696e616c4469726563746f72793a3a7365745465726d696e616c3a2060448201527f4e4f545f464f554e440000000000000000000000000000000000000000000000606482015260840162000350565b73ffffffffffffffffffffffffffffffffffffffff831662000a04576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602c60248201527f5465726d696e616c4469726563746f72793a3a7365745465726d696e616c3a2060448201527f5a45524f5f414444524553530000000000000000000000000000000000000000606482015260840162000350565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141562000a3f5750505050565b60008481526001602090815260409182902080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff8716908117909155915133815286917f6780b115550b4a9f66ac0fa6f3eed2769911165bc5d87ad966769dbbbfae1dbe910160405180910390a350505050565b33600081815260026020908152604080832080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff8816908117909155600383529281902080547fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00168615159081179091558151938452918301919091527f01405a9170fb91f1304461ab04a052c0f33349b97b4df28754a10c681041ff99910160405180910390a25050565b610ae18062000e3e83390190565b60006020828403121562000bae57600080fd5b813562000bbb8162000e08565b9392505050565b60006020828403121562000bd557600080fd5b815162000bbb8162000e08565b6000806040838503121562000bf657600080fd5b823562000c038162000e08565b9150602083013562000c158162000e2e565b809150509250929050565b60006020828403121562000c3357600080fd5b815162000bbb8162000e2e565b60006020828403121562000c5357600080fd5b5035919050565b6000806040838503121562000c6e57600080fd5b82359150602083013562000c158162000e08565b60008060006040848603121562000c9857600080fd5b83359250602084013567ffffffffffffffff8082111562000cb857600080fd5b818601915086601f83011262000ccd57600080fd5b81358181111562000cdd57600080fd5b87602082850101111562000cf057600080fd5b6020830194508093505050509250925092565b8183528181602085013750600060208284010152600060207fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0601f840116840101905092915050565b6020808252825182820181905260009190848201906040850190845b8181101562000d9c57835173ffffffffffffffffffffffffffffffffffffffff168352928401929184019160010162000d68565b50909695505050505050565b73ffffffffffffffffffffffffffffffffffffffff8516815283602082015260606040820152600062000de060608301848662000d03565b9695505050505050565b60208152600062000e0060208301848662000d03565b949350505050565b73ffffffffffffffffffffffffffffffffffffffff8116811462000e2b57600080fd5b50565b801515811462000e2b57600080fdfe60c06040523480156200001157600080fd5b5060405162000ae138038062000ae1833981016040819052620000349162000110565b6001600160601b0319606084901b1660805260a08290528051620000609060009060208401906200006a565b505050506200026c565b828054620000789062000219565b90600052602060002090601f0160209004810192826200009c5760008555620000e7565b82601f10620000b757805160ff1916838001178555620000e7565b82800160010185558215620000e7579182015b82811115620000e7578251825591602001919060010190620000ca565b50620000f5929150620000f9565b5090565b5b80821115620000f55760008155600101620000fa565b6000806000606084860312156200012657600080fd5b83516001600160a01b03811681146200013e57600080fd5b60208581015160408701519295509350906001600160401b03808211156200016557600080fd5b818701915087601f8301126200017a57600080fd5b8151818111156200018f576200018f62000256565b604051601f8201601f19908116603f01168101908382118183101715620001ba57620001ba62000256565b816040528281528a86848701011115620001d357600080fd5b600093505b82841015620001f75784840186015181850187015292850192620001d8565b82841115620002095760008684830101525b8096505050505050509250925092565b600181811c908216806200022e57607f821691505b602082108114156200025057634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fd5b60805160601c60a051610823620002be60003960008181610213015281816102e9015281816103800152610410015260008181606e0152818161016f0152818161023c015261047901526108236000f3fe6080604052600436106100385760003560e01c80633fafa127146103fe57806358c3b870146104455780636abcf8e31461046757600080fd5b366103f9576040517fba7bffd30000000000000000000000000000000000000000000000000000000081523360048201526000907f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff169063ba7bffd390602401602060405180830381600087803b1580156100c757600080fd5b505af11580156100db573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100ff919061054e565b9050600073ffffffffffffffffffffffffffffffffffffffff82166101245733610126565b815b6040517f9dcbf9d600000000000000000000000000000000000000000000000000000000815233600482015290915060009073ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000000000000000000000000000000000000000000001690639dcbf9d690602401602060405180830381600087803b1580156101b357600080fd5b505af11580156101c7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101eb9190610572565b6040517f4fe0eced0000000000000000000000000000000000000000000000000000000081527f000000000000000000000000000000000000000000000000000000000000000060048201529091507f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff1690634fe0eced9060240160206040518083038186803b15801561029357600080fd5b505afa1580156102a7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102cb919061054e565b73ffffffffffffffffffffffffffffffffffffffff166302c8986f347f0000000000000000000000000000000000000000000000000000000000000000856000866040518663ffffffff1660e01b815260040161032b949392919061073f565b6020604051808303818588803b15801561034457600080fd5b505af1158015610358573d6000803e3d6000fd5b50505050506040513d601f19601f8201168201806040525081019061037d9190610594565b507f00000000000000000000000000000000000000000000000000000000000000003373ffffffffffffffffffffffffffffffffffffffff167f73c0c8eb2e5343fd4f621dee6cc0dd1f91a240b7a6245465fa884753efd7cab384346000866040516103ec9493929190610684565b60405180910390a3505050005b600080fd5b34801561040a57600080fd5b506104327f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020015b60405180910390f35b34801561045157600080fd5b5061045a6104c0565b60405161043c91906106cc565b34801561047357600080fd5b5061049b7f000000000000000000000000000000000000000000000000000000000000000081565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200161043c565b600080546104cd90610774565b80601f01602080910402602001604051908101604052809291908181526020018280546104f990610774565b80156105465780601f1061051b57610100808354040283529160200191610546565b820191906000526020600020905b81548152906001019060200180831161052957829003601f168201915b505050505081565b60006020828403121561056057600080fd5b815161056b816107c8565b9392505050565b60006020828403121561058457600080fd5b8151801515811461056b57600080fd5b6000602082840312156105a657600080fd5b5051919050565b8054600090600181811c90808316806105c757607f831692505b6020808410821415610602577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b8388526020880182801561061d576001811461064c57610677565b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00871682528282019750610677565b60008981526020902060005b8781101561067157815484820152908601908401610658565b83019850505b5050505050505092915050565b73ffffffffffffffffffffffffffffffffffffffff851681528360208201526080604082015260006106b960808301856105ad565b9050821515606083015295945050505050565b600060208083528351808285015260005b818110156106f9578581018301518582016040015282016106dd565b8181111561070b576000604083870101525b50601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe016929092016040019392505050565b84815273ffffffffffffffffffffffffffffffffffffffff841660208201526080604082015260006106b960808301856105ad565b600181811c9082168061078857607f821691505b602082108114156107c2577f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b50919050565b73ffffffffffffffffffffffffffffffffffffffff811681146107ea57600080fd5b5056fea2646970667358221220f8f2411970eea8929322e4bda46a8478f5cf404377bd7654e44e8aec42e57e5564736f6c63430008060033a2646970667358221220f416458f5e2e2e67472977b905d65cfd64b8f91977d23ba3fcd0c876da64868264736f6c63430008060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "addressesOf(uint256)": {
+        "params": {
+          "_projectId": "The ID of the project to get direct payment addresses for."
+        },
+        "returns": {
+          "_0": "A list of direct payment addresses for the specified project ID."
+        }
+      },
+      "constructor": {
+        "params": {
+          "_operatorStore": "A contract storing operator assignments.",
+          "_projects": "A Projects contract which mints ERC-721's that represent project ownership and transfers."
+        }
+      },
+      "deployAddress(uint256,string)": {
+        "params": {
+          "_memo": "The note to use for payments made through the new direct payment address.",
+          "_projectId": "The ID of the project to deploy a direct payment address for."
+        }
+      },
+      "setPayerPreferences(address,bool)": {
+        "params": {
+          "_beneficiary": "The beneficiary to set.",
+          "_preferUnstakedTickets": "The preference to set."
+        }
+      },
+      "setTerminal(uint256,address)": {
+        "params": {
+          "_projectId": "The ID of the project to set a new terminal for.",
+          "_terminal": "The new terminal to set."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "addressesOf(uint256)": {
+        "notice": " A list of all direct payment addresses for the specified project ID."
+      },
+      "beneficiaryOf(address)": {
+        "notice": "For each address, the address that will be used as the beneficiary of direct payments made."
+      },
+      "deployAddress(uint256,string)": {
+        "notice": " Allows anyone to deploy a new direct payment address for a project."
+      },
+      "operatorStore()": {
+        "notice": "A contract storing operator assignments."
+      },
+      "projects()": {
+        "notice": "The Projects contract which mints ERC-721's that represent project ownership and transfers."
+      },
+      "setPayerPreferences(address,bool)": {
+        "notice": " Allows any address to pre set the beneficiary of their payments to any direct payment address, and to pre set whether to prefer to unstake tickets into ERC20's when making a payment."
+      },
+      "setTerminal(uint256,address)": {
+        "notice": " Update the candybox terminal that payments to direct payment addresses will be forwarded for the specified project ID."
+      },
+      "terminalOf(uint256)": {
+        "notice": "For each project ID, the candybox terminal that the direct payment addresses are proxies for."
+      },
+      "unstakedTicketsPreferenceOf(address)": {
+        "notice": "For each address, the preference of whether ticket will be auto claimed as ERC20s when a payment is made."
+      }
+    },
+    "notice": "Allows project owners to deploy proxy contracts that can pay them when receiving funds directly.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 8786,
+        "contract": "contracts/TerminalDirectory.sol:TerminalDirectory",
+        "label": "_addressesOf",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_uint256,t_array(t_contract(IDirectPaymentAddress)16253)dyn_storage)"
+      },
+      {
+        "astId": 8798,
+        "contract": "contracts/TerminalDirectory.sol:TerminalDirectory",
+        "label": "terminalOf",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_uint256,t_contract(ITerminal)17036)"
+      },
+      {
+        "astId": 8804,
+        "contract": "contracts/TerminalDirectory.sol:TerminalDirectory",
+        "label": "beneficiaryOf",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 8810,
+        "contract": "contracts/TerminalDirectory.sol:TerminalDirectory",
+        "label": "unstakedTicketsPreferenceOf",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_contract(IDirectPaymentAddress)16253)dyn_storage": {
+        "base": "t_contract(IDirectPaymentAddress)16253",
+        "encoding": "dynamic_array",
+        "label": "contract IDirectPaymentAddress[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(IDirectPaymentAddress)16253": {
+        "encoding": "inplace",
+        "label": "contract IDirectPaymentAddress",
+        "numberOfBytes": "20"
+      },
+      "t_contract(ITerminal)17036": {
+        "encoding": "inplace",
+        "label": "contract ITerminal",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_uint256,t_array(t_contract(IDirectPaymentAddress)16253)dyn_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => contract IDirectPaymentAddress[])",
+        "numberOfBytes": "32",
+        "value": "t_array(t_contract(IDirectPaymentAddress)16253)dyn_storage"
+      },
+      "t_mapping(t_uint256,t_contract(ITerminal)17036)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => contract ITerminal)",
+        "numberOfBytes": "32",
+        "value": "t_contract(ITerminal)17036"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

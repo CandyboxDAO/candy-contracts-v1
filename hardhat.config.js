@@ -2,11 +2,14 @@ const fs = require('fs');
 const dotenv = require('dotenv');
 const taskNames = require('hardhat/builtin-tasks/task-names');
 
+require("@nomiclabs/hardhat-ganache");
 require('@nomiclabs/hardhat-etherscan');
 require('@nomiclabs/hardhat-waffle');
 require('@nomiclabs/hardhat-ethers');
 require('hardhat-gas-reporter');
 require('hardhat-deploy');
+require('hardhat-deploy-ethers');
+require('solidity-coverage');
 
 dotenv.config();
 
@@ -23,6 +26,28 @@ function mnemonic() {
   return '';
 }
 
+function privatekeys(network){
+  network = network || defaultNetwork;
+  let accounts = [process.env.LOCAL_DEPLOYER_PRIVATE_KEY, process.env.LOCAL_CALLER_PRIVATE_KEY];
+  switch(network) {
+      case "bsc":
+      case "avalanche":
+      case "aurora":
+      case "mainnet":
+        accounts = [process.env.DEPLOYER_PRIVATE_KEY, process.env.CALLER_PRIVATE_KEY];
+        break;
+      case "bscTestnet":
+      case "avalancheFujiTestnet":
+      case "auroraTestnet":
+      case "rinkeby":
+        accounts = [process.env.TEST_DEPLOYER_PRIVATE_KEY, process.env.TEST_CALLER_PRIVATE_KEY];
+        break;
+      default:
+        break;
+  }
+  return accounts;
+}
+
 const infuraId = process.env.INFURA_ID;
 
 module.exports = {
@@ -30,6 +55,9 @@ module.exports = {
   networks: {
     localhost: {
       url: 'http://localhost:8545',
+      blockGasLimit: 10000000,
+      gas: 10000000,
+      network_id: '*', // eslint-disable-line camelcase
     },
     rinkeby: {
       url: 'https://rinkeby.infura.io/v3/' + infuraId,
@@ -45,13 +73,45 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
+    // near-aurora network
+    auroraTestnet: {
+      url: 'https://testnet.aurora.dev',      
+      accounts: privatekeys("auroraTestnet")
+    },
+    // bsc network
+    bsc: {
+      url: 'https://bsc-dataseed1.binance.org',
+      accounts: privatekeys("bsc"),
+      gasPrice: 5000000000,
+      network_id: 56
+    },
+    bscTestnet: {
+      url: 'https://data-seed-prebsc-1-s1.binance.org:8545',
+      accounts: privatekeys("bscTestnet"),
+      network_id: 97,
+      gas: 10000000
+    },
+    // avalanche network
+    avalanche: {
+      url: 'https://api.avax.network/ext/bc/C/rpc',
+      accounts: privatekeys("avalanche"),
+      network_id: 43114
+    },
+    avalancheFujiTestnet: {
+      url: 'https://data-seed-prebsc-1-s1.binance.org:8545',
+      accounts: privatekeys("avalancheFujiTestnet"),
+      network_id: 43113,
+    }
   },
   namedAccounts: {
     deployer: {
       default: 0,
     },
+    caller: {
+      default: 1,
+    },
     feeCollector: {
-      default: 0,
+      default: 2,
     },
   },
   solidity: {
@@ -74,7 +134,28 @@ module.exports = {
     showTimeSpent: true,
   },
   etherscan: {
-    apiKey: `${process.env.ETHERSCAN_API_KEY}`,
+    apiKey: {
+      mainnet: process.env.ETHERSCAN_API_KEY,
+      ropsten: process.env.ETHERSCAN_API_KEY,
+      rinkeby: process.env.ETHERSCAN_API_KEY,      
+      // binance smart chain
+      bsc: process.env.BSCSCAN_API_KEY,
+      bscTestnet:  process.env.BSCSCAN_API_KEY,   
+      // avalanche
+      avalanche: process.env.SNOWTRACE_API_KEY,
+      avalancheFujiTestnet: process.env.SNOWTRACE_API_KEY,    
+      // fantom mainnet
+      opera: "YOUR_FTMSCAN_API_KEY",
+      ftmTestnet: "YOUR_FTMSCAN_API_KEY",    
+      // polygon
+      polygon: "YOUR_POLYGONSCAN_API_KEY",
+      polygonMumbai: "YOUR_POLYGONSCAN_API_KEY"     
+    },
+
+    verify_axiosDefaultConfig: {
+      proxy: true,
+      httpsAgentUrl: "http://127.0.0.1:19180"
+    }
   },
 };
 
