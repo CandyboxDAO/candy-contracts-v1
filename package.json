@@ -57,9 +57,7 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
 
     "deploy:localhost": "npx hardhat deploy --network localhost",     
-    "deploy:auroraTestnet": "npx hardhat deploy --network auroraTestnet",
     "deploy:bscTestnet": "npx hardhat deploy --network bscTestnet",
-    "test:dev": "npx hardhat test test/unit/CrowdLuckNFTs/index.js",
 
     "deploy:bsc": "npx hardhat deploy --network bsc",
     "verify:bsc": "npx hardhat --network bsc etherscan-verify"
